@@ -1,10 +1,14 @@
+<p align="left">
+  <img src="./icons/icon-128.png" alt="HIPAA Shield" width="96" height="96" />
+</p>
+
 # HIPAA Shield
 
 A Chromium browser extension that warns when Protected Health Information (PHI) is being typed or pasted into form fields — especially **AI chat interfaces like ChatGPT, Claude, Gemini, Copilot, and Perplexity**, which are the fastest-growing source of casual HIPAA violations in independent healthcare practices.
 
 **100% client-side. No network calls. Ever.**
 
-Built by [Patient Protect](https://patient-protect.com).
+Built by [Patient Protect](https://patient-protect.com). Landing page + install guide: [patient-protect.com/hipaa-shield](https://patient-protect.com/hipaa-shield).
 
 ## Why this exists
 
@@ -93,8 +97,10 @@ The code is free to use, modify, redistribute, and fork. Forks improving detecti
 
 ## Companion resources
 
+- [HIPAA Shield landing page](https://patient-protect.com/hipaa-shield) — features, FAQ, hosted privacy policy
 - [Patient Protect HIPAA Toolkit](https://github.com/patient-protect/hipaa-toolkit) — open reference data (glossary, acronyms, identifiers, state laws, templates)
 - [Patient Protect](https://patient-protect.com) — the HIPAA compliance platform for independent practices
+- [Patient Protect free tools](https://patient-protect.com/free-tools) — 20+ free HIPAA resources
 - [Is ChatGPT HIPAA compliant?](https://patient-protect.com/post/is-chatgpt-hipaa-compliant-ai-patient-data-risk) — the context
 
 ## Contributing
@@ -107,4 +113,7 @@ PRs welcome. High-value contributions:
 
 ## Privacy policy
 
-See [PRIVACY.md](./PRIVACY.md). Summary: nothing leaves your browser, ever.
+- In this repo: [PRIVACY.md](./PRIVACY.md)
+- Hosted version: [patient-protect.com/hipaa-shield/privacy](https://patient-protect.com/hipaa-shield/privacy)
+
+Summary: nothing leaves your browser, ever.
