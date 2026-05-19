@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HIPAA Shield</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HIPAA Shield</h1>
+      <p class="subtitle">PHI detection for browser forms</p>
+    </header>
+
+    <section>
+      <h2>Detection rules</h2>
+      <p class="hint">All checks run client-side. Nothing is sent anywhere.</p>
+      <ul id="rules">
+        <li>
+          <label>
+            <input type="checkbox" data-rule="ssn" />
+            <span class="rule-label">SSN</span>
+            <span class="severity-tag high">high</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-rule="dob" />
+            <span class="rule-label">Date of birth</span>
+            <span class="severity-tag high">high</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-rule="phone" />
+            <span class="rule-label">Phone number</span>
+            <span class="severity-tag medium">medium</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-rule="email" />
+            <span class="rule-label">Email address</span>
+            <span class="severity-tag medium">medium</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-rule="credit-card" />
+            <span class="rule-label">Credit card number</span>
+            <span class="severity-tag high">high</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-rule="mrn" />
+            <span class="rule-label">Medical record number</span>
+            <span class="severity-tag high">high</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-rule="icd-10" />
+            <span class="rule-label">ICD-10 code</span>
+            <span class="severity-tag low">low</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-rule="diagnosis-keywords" />
+            <span class="rule-label">Diagnosis terms</span>
+            <span class="severity-tag low">low</span>
+          </label>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>
+        Open source, MIT licensed.<br />
+        <a href="https://github.com/patient-protect/hipaa-shield" target="_blank" rel="noopener">View on GitHub</a>
+        &middot;
+        <a href="https://patient-protect.com" target="_blank" rel="noopener">Patient Protect</a>
+      </p>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

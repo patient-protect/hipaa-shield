@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "HIPAA Shield — PHI Detection for Browsers",
+  "version": "0.1.0",
+  "description": "Warns when patient health information is being typed into browser forms — especially AI chat interfaces like ChatGPT, Claude, and Gemini. 100% client-side; no data leaves the browser.",
+  "homepage_url": "https://github.com/patient-protect/hipaa-shield",
+  "author": "Patient Protect LLC",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "default_title": "HIPAA Shield"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content-script.js"],
+      "css": ["src/content-script.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "src/service-worker.js"
+  },
+  "permissions": ["storage"],
+  "host_permissions": []
+}
